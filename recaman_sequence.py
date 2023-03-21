@@ -1,6 +1,7 @@
 # recaman_sequence.py
 # Andrew Lounsbury
 # 21/3/23
+# Purpose: generate the Recaman sequence; https://www.youtube.com/watch?v=FGC5TdIiT9U
 sequence = [0]
 
 # generates the sequence up to the n-th number
