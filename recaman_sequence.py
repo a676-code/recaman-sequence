@@ -28,6 +28,8 @@ def generate_recaman(n):
 sequence = generate_recaman(50)
 print(sequence)
 
+# Basic Scatterplots
+'''
 n = 1000
 sequence = generate_recaman(n)
 df1 = pd.DataFrame(sequence, columns=["Number"])
@@ -62,4 +64,101 @@ for i in range(n):
 
 df3["index"] = indices
 sns.scatterplot(x="index", y="Number", data=df3)
+plt.show()
+'''
+
+# Averages
+n = 10
+sequence = generate_recaman(n)
+average_sequence = []
+sum = 0
+for i, s in enumerate(sequence):
+    sum += s
+    average = sum / (i + 1)
+    average_sequence.append(average)
+
+df_average = pd.DataFrame(average_sequence, columns=["Average"])
+
+indices = []
+for i in range(n):
+    indices.append(i)
+df_average["index"] = indices
+
+sns.scatterplot(x = "index", y = "Average", data=df_average)
+plt.show()
+
+n = 100
+sequence = generate_recaman(n)
+average_sequence = []
+sum = 0
+for i, s in enumerate(sequence):
+    sum += s
+    average = sum / (i + 1)
+    average_sequence.append(average)
+
+df_average = pd.DataFrame(average_sequence, columns=["Average"])
+
+indices = []
+for i in range(n):
+    indices.append(i)
+df_average["index"] = indices
+
+sns.scatterplot(x = "index", y = "Average", data=df_average)
+plt.show()
+
+n = 1000
+sequence = generate_recaman(n)
+average_sequence = []
+sum = 0
+for i, s in enumerate(sequence):
+    sum += s
+    average = sum / (i + 1)
+    average_sequence.append(average)
+
+df_average = pd.DataFrame(average_sequence, columns=["Average"])
+
+indices = []
+for i in range(n):
+    indices.append(i)
+df_average["index"] = indices
+
+sns.scatterplot(x = "index", y = "Average", data=df_average)
+plt.show()
+
+n = 10000
+sequence = generate_recaman(n)
+average_sequence = []
+sum = 0
+for i, s in enumerate(sequence):
+    sum += s
+    average = sum / (i + 1)
+    average_sequence.append(average)
+
+df_average = pd.DataFrame(average_sequence, columns=["Average"])
+
+indices = []
+for i in range(n):
+    indices.append(i)
+df_average["index"] = indices
+
+sns.scatterplot(x = "index", y = "Average", data=df_average)
+plt.show()
+
+n = 100000
+sequence = generate_recaman(n)
+average_sequence = []
+sum = 0
+for i, s in enumerate(sequence):
+    sum += s
+    average = sum / (i + 1)
+    average_sequence.append(average)
+
+df_average = pd.DataFrame(average_sequence, columns=["Average"])
+
+indices = []
+for i in range(n):
+    indices.append(i)
+df_average["index"] = indices
+
+sns.scatterplot(x = "index", y = "Average", data=df_average)
 plt.show()
