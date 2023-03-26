@@ -5,7 +5,7 @@ output: `[0, 1, 3, 6, 2, 7, 13, 20, 12, 21, 11, 22, 10, 23, 9, 24, 8, 25, 43, 62
 
 # Seaborn Plots
 ## Basic Scatterplots
-A scatterplot of the first 1000 numbers:
+A scatterplot of the first 1,000 numbers:
 ![1000](1000.png)
 
 A scatterplot of the first 10,000 numbers:
