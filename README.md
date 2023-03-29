@@ -17,6 +17,7 @@ A scatterplot of the first 100,000 numbers:
 ## Plotting the Average as $n \to \infty$
 Scatterplot of the first 10 averages:
 ![10 averages](images/average_10.png)
+
 Scatterplot of the first 100 averages:
 ![100 averages](images/average_100.png)
 Scatterplot of the first 1,000 averages:
